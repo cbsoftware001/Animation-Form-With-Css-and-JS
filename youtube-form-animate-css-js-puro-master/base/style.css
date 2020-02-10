@@ -106,3 +106,14 @@ form .btn-login{
     transform:translateX(0);
   }
 }
+/* FAZENDO FORMULARIO DESAPARECER */
+.form-hidden{
+  animation: down 500ms forwards;
+}
+@keyframes down{
+  from{
+    transform: translateY(0);
+  }to{
+    transform: translateY(100vh);
+  }
+}
