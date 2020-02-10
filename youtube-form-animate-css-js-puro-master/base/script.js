@@ -8,3 +8,16 @@ btnLogin.addEventListener("click", (envento) => {
     
     form.classList.add("form-hidden");
 });
+
+form.addEventListener("animationstart", (evento) => {
+    if(evento.animationName === 'down'){
+        document.querySelector("body").style.overflow = 'hidden';
+    }
+});
+
+form.addEventListener("animationend", (evento) =>{
+    if(evento.animationName == 'dow'){
+        form.style.display = 'none';
+        document.querySelector("body").style.overflow = 'hidden';
+    }
+});
