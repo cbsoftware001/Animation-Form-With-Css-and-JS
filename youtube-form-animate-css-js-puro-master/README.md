@@ -7,3 +7,4 @@
 - [X] Quando clicar em Login, fazer o formulário sair da tela, indo para baixo
 - [X] Remover formulário do html e não mostrar rolagem enquanto o formulário está saindo da tela
 - [X] Adicionar um efeito diferente de timing para a saída do formulário
+- [X] Fazer o formulário dizer não-não (vibrar) caso haja campos vazios.

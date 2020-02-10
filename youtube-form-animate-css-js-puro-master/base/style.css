@@ -118,3 +118,28 @@ form .btn-login{
     transform: translateY(100vh);
   }
 }
+/* FORM NO-NO */
+form.validate-error{
+  animation: no-no 350ms linear, fade paused; 
+  animation-iteration-count: 2;
+  
+}
+form.validate-error input{
+  border: 1px solid rgb(223, 16, 16);
+}
+form.validate-error label{
+  color: rgb(223, 16, 16);
+}
+@keyframes no-no{
+  
+  0%,100%
+  {
+    transform: translateX(0);
+  }
+  35%{
+    transform: translateX(-20%);
+  }
+  70%{
+    transform: translateX(20%);
+  }
+}
