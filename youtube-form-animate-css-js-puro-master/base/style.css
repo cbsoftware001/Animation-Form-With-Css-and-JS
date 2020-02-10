@@ -69,8 +69,7 @@ form .btn-login {
 
 /* APARIÇÃO DO FORM */
 form{
-  animation-name: fade;
-  animation-duration: 500ms;
+  animation: fade 500ms;
 }
 @keyframes fade{
   from{
@@ -79,5 +78,31 @@ form{
   }to{
     opacity: 1;
     transform: scale(1);
+  }
+}
+/* FAZER OS CAMPOS APARECEREM DA ESQUERDA PARA DIREITA SUAVEMENTE */
+form{
+  overflow: hidden;
+}
+form .input-block:nth-child(1){
+  animation: move 500ms;
+}
+form .input-block:nth-child(2){
+  animation: move 500ms;
+  animation-delay: 150ms;
+  animation-fill-mode: backwards;
+}
+form .btn-login{
+  animation: move 500ms;
+  animation-delay: 250ms;
+  animation-fill-mode: backwards    ;
+}
+@keyframes move{
+  from{
+    opacity: 0;
+    transform: translateX(-35%);
+  }to{
+    opacity: 1;
+    transform:translateX(0);
   }
 }
