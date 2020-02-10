@@ -109,6 +109,7 @@ form .btn-login{
 /* FAZENDO FORMULARIO DESAPARECER */
 .form-hidden{
   animation: down 500ms forwards;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 @keyframes down{
   from{
